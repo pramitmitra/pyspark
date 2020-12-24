@@ -23,3 +23,21 @@ Type :help for more information.
 
 scala>
 
+## How to quit Scala REPL?
+
+scala> :quit
+(base) ✔ ~
+
+## Test Local Setup: Run spark-shell (e.g. /Users/my_projects/spark-3.0.1-bin-hadoop2.7/bin/pyspark)
+
+11:44 $ /Users/my_projects/spark-3.0.1-bin-hadoop2.7/bin/pyspark
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 3.0.1
+      /_/
+
+Using Python version 2.7.16 (default, Jun  5 2020 22:59:21)
+SparkSession available as 'spark'.
+
