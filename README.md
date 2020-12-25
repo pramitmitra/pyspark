@@ -41,3 +41,14 @@ Welcome to
 Using Python version 2.7.16 (default, Jun  5 2020 22:59:21)
 SparkSession available as 'spark'.
 
+## Setup Intellij IDEA for Scala as Spark programming language and SBT as build tool.
+### Steps:
+* 1. Install IntelliJ (Community or otherwise)
+* 2. Start IntelliJ
+* 3. Scala Plugin Install: Click IntelliJ -> Congigure -> Plugin -> Search For "Scala" -> Install -> Restart IDE.
+* 4. IntelliJ -> Open
+
+### Sample Code: github.com/LearningJournal/Spark-Streaming-in-Scala
+
+
+
