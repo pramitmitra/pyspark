@@ -1,4 +1,4 @@
-# Dependencies to setup pyspark on MacOS
+# pyspark Dependencies to setup on MacOS
 
 * 1. SPARK_HOME (e.g: echo $SPARK_HOME Output: ./my_projects/spark-3.0.1-bin-hadoop2.7)
 * 2. PYSPARK_PYTHON --> By default, Python is not part of Spark environment. By setting PYSPARK_PYTHON, establishes relationship between Python and Spark environments. (e.g: echo $PYSPARK_PYTHON. output: ./pyspark)
@@ -16,10 +16,6 @@ Welcome to
     _\ \/ _ \/ _ `/ __/  '_/
    /___/ .__/\_,_/_/ /_/\_\   version 3.0.1
       /_/
-
-Using Scala version 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_211)
-Type in expressions to have them evaluated.
-Type :help for more information.
 
 scala>
 
@@ -56,11 +52,22 @@ Steps: File>New> Project from Existing Source>(select) Import project from exter
 
 
 # Kafka Instalation
+https://kafka.apache.org/quickstart
 ## 1. Download Kafka binary
 ### 1.1. zookeeper.properties -> Used by Zookeeper Server
 ### 1.2. server.properties -> Kafka broker
 
-## Set KAFKA_HOME & KAFKA/BIN to source path
+## 2 Set KAFKA_HOME & KAFKA/BIN to source path
+### 2.1 Start ZooKeeper --> bin/zookeeper-server-start.sh config/zookeeper.properties
+### 2.2 Start Kafka Server --> bin/kafka-server-start.sh config/server.properties
+### 2.3 Create "topic" --> bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092 -->Created topicquickstart-events.
+### 2.4 Kafka Producer --> kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+>Hello Spark Streaming1
+>Hello Spark Streaming2
+
+### 2.5 Kafka Consumer --> kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+Hello Spark Streaming1
+Hello Spark Streaming2
 
 
 
