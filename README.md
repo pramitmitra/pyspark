@@ -73,5 +73,8 @@ Update --> log.dirs=../kafka-logs/server-0
 >Hello Spark Streaming2
 
 
+### Netcat in MACOS
+> -Dlog4j.configuration=file:log4j.properties
+
 
 
