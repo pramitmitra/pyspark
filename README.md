@@ -55,4 +55,13 @@ Then make sure to import porject from external source in Intellij and import as 
 Steps: File>New> Project from Existing Source>(select) Import project from external model> (select)sbt click Next>Finish
 
 
+# Kafka Instalation
+## 1. Download Kafka binary
+### 1.1. zookeeper.properties -> Used by Zookeeper Server
+### 1.2. server.properties -> Kafka broker
+
+## Set KAFKA_HOME & KAFKA/BIN to source path
+
+
+
 
