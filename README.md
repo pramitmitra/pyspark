@@ -76,5 +76,36 @@ Update --> log.dirs=../kafka-logs/server-0
 ### Netcat in MACOS
 > nc -l 9999
 
+# Project -> Spark Streaming Word Count Listener
+## Requirements:
+* 1. Netcat on terminal (nc -l 9999)
+* 2. Code StreamingWC.scala
+
+### Demo process ->
+* Step1 : From Terminal -> nc -l 9999
+* Step2 : Intellij -> Scala/SBT Project -> Write code HelloSparkSQL.scala
+* Step3 : Start the program from Intellij
+* Step4 : Type stuff at terminal
+* Step5 : Observer output
+
+Batch: 0
+-------------------------------------------
++---------+-----+
+|     word|count|
++---------+-----+
+
+Batch: 6
+-------------------------------------------
++---------+-----+
+|     word|count|
++---------+-----+
+|    Spark|    4|
+|    Hello|    3|
+| Sparking|    1|
+|Streaming|    2|
+|       is|    1|
++---------+-----+
+
+
 
 
