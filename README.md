@@ -50,5 +50,9 @@ SparkSession available as 'spark'.
 
 ### Sample Code: github.com/LearningJournal/Spark-Streaming-in-Scala
 
+## Learning Notes:: (If see error like ->Error: Could not find or load main class )
+Then make sure to import porject from external source in Intellij and import as SBT project.
+Steps: File>New> Project from Existing Source>(select) Import project from external model> (select)sbt click Next>Finish
+
 
 
