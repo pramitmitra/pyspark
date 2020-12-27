@@ -55,7 +55,10 @@ Steps: File>New> Project from Existing Source>(select) Import project from exter
 https://kafka.apache.org/quickstart
 ## 1. Download Kafka binary
 ### 1.1. zookeeper.properties -> Used by Zookeeper Server
+* Changes --> dataDir=../kafka-logs/zookeeper
 ### 1.2. server.properties -> Kafka broker
+* Changes --> Uncomment --> listeners=PLAINTEXT://:9092
+Update --> log.dirs=../kafka-logs/server-0
 
 ## 2 Set KAFKA_HOME & KAFKA/BIN to source path
 ### 2.1 Start ZooKeeper --> bin/zookeeper-server-start.sh config/zookeeper.properties
