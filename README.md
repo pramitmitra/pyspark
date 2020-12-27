@@ -69,8 +69,8 @@ Update --> log.dirs=../kafka-logs/server-0
 >Hello Spark Streaming2
 
 ### 2.5 Kafka Consumer --> kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
-Hello Spark Streaming1
-Hello Spark Streaming2
+>Hello Spark Streaming1
+>Hello Spark Streaming2
 
 
 
