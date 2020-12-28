@@ -107,5 +107,13 @@ Batch: 6
 +---------+-----+
 
 
+# Kafka Spark Streaming Meven Package Dependency add
+## Steps:
+* 1: From apache meven repo, search for apache spark sql kafka 0.10.12
+* 2: Add that to build.sbt (Follow exmp from KafkaStreamDemo.scala sbt.build file)
+* 3: Make sure this package and dependencies are available to Spark Master and Executors. How to do that?
+* Add the following lines to Spark-defaults
+* spark.jars.packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.0
+** Alternatively use --packages option while "spark-submit"
 
 
